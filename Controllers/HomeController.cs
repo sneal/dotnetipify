@@ -7,12 +7,20 @@ namespace DotNetIpify
     {
         public IActionResult Index()
         {
+            ViewBag.ServerIP = GetServerPublicIP();
+            return View();
+        }
+
+        private string GetServerPublicIP()
+        {
             var client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Clear();
             var result = client.GetStringAsync("https://api.ipify.org?format=text");
-            result.Wait(5000);
-            ViewBag.ServerIP = result.Result;
-            return View();
+            if (result.Wait(5000))
+            {
+                return result.Result;
+            }
+            return "Unknown";
         }
     }
 }
