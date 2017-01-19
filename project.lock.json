@@ -1137,6 +1137,19 @@
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Framework.Primitives/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.1-beta-23409",
+          "System.Runtime": "4.0.21-beta-23409"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Framework.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Framework.Primitives.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -4118,6 +4131,23 @@
         "Microsoft.Extensions.WebEncoders.nuspec",
         "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll",
         "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.xml"
+      ]
+    },
+    "Microsoft.Framework.Primitives/1.0.0-beta8": {
+      "sha512": "tCmbjiE+AgwTfikByvv0xEsnA/z5SOAecZT6gb7EbjuanlzzCUyqTSnvi5SRLGBQsTNKjLiQFFlVOeWHZPOcDg==",
+      "type": "package",
+      "path": "Microsoft.Framework.Primitives/1.0.0-beta8",
+      "files": [
+        "Microsoft.Framework.Primitives.1.0.0-beta8.nupkg.sha512",
+        "Microsoft.Framework.Primitives.nuspec",
+        "lib/dnx451/Microsoft.Framework.Primitives.dll",
+        "lib/dnx451/Microsoft.Framework.Primitives.xml",
+        "lib/dnxcore50/Microsoft.Framework.Primitives.dll",
+        "lib/dnxcore50/Microsoft.Framework.Primitives.xml",
+        "lib/dotnet/Microsoft.Framework.Primitives.dll",
+        "lib/dotnet/Microsoft.Framework.Primitives.xml",
+        "lib/net45/Microsoft.Framework.Primitives.dll",
+        "lib/net45/Microsoft.Framework.Primitives.xml"
       ]
     },
     "Microsoft.Net.Http.Headers/1.0.0": {
@@ -8955,6 +8985,7 @@
       "Microsoft.AspNetCore.Mvc >= 1.0.0",
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.0",
       "Microsoft.Extensions.Configuration.CommandLine >= 1.0.0",
+      "Microsoft.Framework.Primitives >= 1.0.0-beta8",
       "Microsoft.NETCore.App >= 1.0.1"
     ]
   },

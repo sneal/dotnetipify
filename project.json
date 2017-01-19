@@ -15,7 +15,8 @@
         },
         "Microsoft.AspNetCore.Mvc": "1.0.0",
         "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
-        "Microsoft.Extensions.Configuration.CommandLine": "1.0.0"
+        "Microsoft.Extensions.Configuration.CommandLine": "1.0.0",
+        "Microsoft.Framework.Primitives": "1.0.0-beta8"
       },
       "imports": "dnxcore50"
     }
